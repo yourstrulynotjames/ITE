@@ -65,26 +65,13 @@ body {
     max-width: 650px;
 }
 
-.small-title,
-.section-label {
-    color: #e63946;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
-}
-
 .hero h2 {
-    font-size: 60px;
+    font-size: 55px;
     line-height: 1.05;
     margin-bottom: 20px;
 }
 
-.hero h2 span {
-    color: #e63946;
-}
-
-.hero p:not(.small-title) {
+.hero p {
     font-size: 18px;
     line-height: 1.7;
     color: #ddd;
@@ -108,131 +95,98 @@ button:hover {
 }
 
 .about {
-    padding: 100px 8%;
+    padding: 80px 8%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 50px;
     align-items: center;
     background: white;
 }
 
 .about-image img {
     width: 100%;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
-    border: 8px solid #111;
-    box-shadow: 15px 15px 0 #e63946;
+    border: 6px solid #111;
+    box-shadow: 12px 12px 0 #e63946;
 }
 
 .about-content h2 {
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
-.about-content p:not(.section-label) {
+.about-content p {
     color: #555;
     line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-.about-content button {
-    background: #111;
-    margin-top: 10px;
 }
 
 .stories {
-    padding: 100px 8%;
+    padding: 80px 8%;
     background: #f3f3f3;
 }
 
-.section-heading {
+.stories > h2 {
     text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-heading h2 {
-    font-size: 45px;
-    margin-bottom: 10px;
-}
-
-.section-heading > p:last-child {
-    color: #666;
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
 .story-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 280px);
+    justify-content: center;
+    gap: 35px;
+    width: 100%;
 }
 
 .story-card {
+    width: 280px;
     background: white;
     border: 2px solid #222;
-    box-shadow: 8px 8px 0 #111;
+    box-shadow: 6px 6px 0 #111;
     overflow: hidden;
     transition: 0.3s;
 }
 
 .story-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 12px 12px 0 #e63946;
+    transform: translateY(-6px);
+    box-shadow: 8px 8px 0 #e63946;
 }
 
-.story-image {
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-}
-
-.story-image img {
+.story-card img {
     width: 100%;
-    height: 100%;
+    height: 170px;
     object-fit: cover;
-    transition: 0.4s;
+    display: block;
 }
 
-.story-card:hover .story-image img {
-    transform: scale(1.08);
+.story-card h3 {
+    font-size: 20px;
+    padding: 15px 15px 5px;
 }
 
-.story-image span {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: #111;
-    color: white;
-    padding: 7px 12px;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.story-content {
-    padding: 25px;
-}
-
-.story-content h3 {
-    font-size: 25px;
-    margin-bottom: 12px;
-}
-
-.story-content p {
+.story-card p {
+    font-size: 14px;
+    line-height: 1.5;
     color: #666;
-    line-height: 1.6;
-    min-height: 80px;
-    margin-bottom: 20px;
+    padding: 0 15px;
+    min-height: 70px;
 }
 
-.story-content button {
+.story-card button {
+    margin: 12px 15px 15px;
+    padding: 10px 18px;
+    font-size: 13px;
     background: #111;
 }
 
-.story-content button:hover {
+.story-card button:hover {
     background: #e63946;
 }
 
 .contact {
-    padding: 100px 8%;
+    padding: 80px 8%;
     text-align: center;
     background: #111;
     color: white;
@@ -244,14 +198,13 @@ button:hover {
 }
 
 .contact h2 {
-    font-size: 45px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
-.contact p:not(.section-label) {
+.contact p {
     color: #bbb;
     line-height: 1.7;
-    margin-bottom: 25px;
 }
 
 footer {
@@ -259,16 +212,17 @@ footer {
     text-align: center;
     background: #050505;
     color: #777;
-    font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+    .story-container {
+        grid-template-columns: repeat(2, 280px);
+    }
 }
 
 @media (max-width: 900px) {
     .navbar {
         padding: 20px 5%;
-    }
-
-    .nav-links {
-        gap: 15px;
     }
 
     .hero {
@@ -284,28 +238,19 @@ footer {
         padding: 70px 5%;
     }
 
-    .story-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .stories {
         padding: 70px 5%;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .navbar {
         flex-direction: column;
         gap: 15px;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero {
-        min-height: 500px;
+        gap: 15px;
     }
 
     .hero h2 {
@@ -313,12 +258,13 @@ footer {
     }
 
     .story-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 280px;
     }
 
     .about-content h2,
-    .section-heading h2,
+    .stories > h2,
     .contact h2 {
-        font-size: 35px;
+        font-size: 32px;
     }
 }
+
