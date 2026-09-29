@@ -3,108 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manggahan</title>
+    <title>Happy Teacher's Month Ma'am Mari</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<nav class="navbar">
-    
-    <h1> Manggahan</h1>
-    <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Stories</a>
-        <a href="#">About</a>
-        
-    </div>
-</nav>
 
-<section class="hero">
-    <div class="hero-content">
-        <h2>Embark on a Journey of Imagination</h2>
-        <p>Discover magical adventures, wonderful characters, and stories waiting to be explored.</p>
-        <button>Explore Stories</button>
-    </div>
-</section>
-<section class="about">
-    <div class="about-image">
-        <img src="hahaha.jpeg" alt="Story Book Image">
-    </div>
-    <div class="about-content">
-        <h2>About our Story Book</h2>
-        <p>Story Book is a collection of simple and inspiring stories created for readers who love imagination, adventure, and wonderful characters.</p>
-    </div>
-</section>
+    <div class="card">
 
+        <div class="flower">🌸</div>
 
-<section class="Stories">
-<h2>Featured Stories</h2>
+        <h1>Happy Teacher's Month!</h1>
+        <h2>Ma'am Mari 💐</h2>
 
-<p class="story-container ">
+        <!-- IMAGE -->
+        <div class="teacher-photo">
+            <img src="tc.jpg" alt="Ma'am Mari">
+        </div>
 
-    <div class="story-card">
-        <h3> BLack Clover </h3>
+        <p class="intro">
+            Thank you for being a wonderful teacher! ❤️
+        </p>
 
-    <img src="asta.jpe" alt="Story 1">
-    <p>Follow the journey of Asta, a young boy born without magic in a world where magic is everything. With determination and hard work, he strives to become the Wizard King.</p>
-    <button>Read More</button>
-    </div>  
+        <!-- SONG -->
+        <div class="music-box">
+            <p>🎵 A Song For You 🎵</p>
 
-<section class="Stories">
-<h2>Featured Stories</h2>
+            <audio controls>
+                <source src="Taylor Swift - Sparks Fly (Taylors Version) (Lyric Video).mp3" type="audio/mpeg">
+            
+            </audio>
+        </div>
 
-<p class="story-container ">
+        <button onclick="showMessage()">Open Message 💌</button>
 
-    <div class="story-card">
-        <h3> Demon Slayer </h3>
+        <div id="message" class="hidden">
 
-    <img src="tanjiro.jpe" alt="Story 2">
-    <p>Follow the journey of Tanjiro, a young boy who becomes a demon slayer to save his sister and avenge his family.</p>
-    <button>Read More</button>
-    </div>  
+            <p>
+                Dear Ma'am Mari,
+            </p>
 
-    <section class="Stories">
-<h2>Featured Stories</h2>
-<div class="story-card">
+            <p>
+                Thank you for your patience, kindness, and dedication
+                in teaching and guiding us. We truly appreciate all the
+                effort you give to help us learn and become better students.
+            </p>
 
-        <h3> Naruto </h3>
+            <p>
+                Your lessons and advice will always be something we can
+                carry with us. Thank you for being an amazing teacher!
+            </p>
 
-    <img src="narutu.jpe" alt="Story 3">
-    <p>Follow the journey of Naruto, a young boy who becomes a ninja to achieve his dreams and gain the respect of his peers.</p>
-    <button>Read More</button>
-    </div>  
+            <h3>Happy Teacher's Month, Ma'am Mari! ❤️</h3>
 
-   <section class="Stories">
-<h2>Featured Stories</h2>   
-    <div class="story-card">
-        <h3> Sakamoto Days </h3>
-        <img src="taro.jpe" alt="Story 4">
-        <p>Taro Sakamoto is a retired legendary hitman who becomes a family man and shopkeeper but is forced back into conflict when old enemies resurface.</p>
-        <button>Read More</button>
-    </div>
-    <section class="Stories">
-<h2>Featured Stories</h2>
-    <div class="story-card">
-    
+        </div>
 
-        </h2>
-        <h3> My Hero Academia </h3>
-        <img src="deku.jpe" alt="Story 5">
-        <p>Follow the journey of Izuku Midoriya, a young boy who becomes a hero in a world where most people have superpowers.</p>
-        <button>Read More</button>
-    </div>
-<section class="Stories">
-<h2>Featured Stories</h2>
-
-     <div class="story-card">
-        <h3> Solo Leveling </h3>
-        <img src="jinwo.jpe" alt="Story 6">
-        <p>Follow the journey of Jinwoo, a young boy who becomes a shadow monarch</p>
-        <button>Read More</button>
+        <div id="hearts"></div>
 
     </div>
-</section>
-<footer>
-    <p>&copy; 2026 Story Book. All rights reserved.</p>
-</footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
